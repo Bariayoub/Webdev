@@ -1,12 +1,10 @@
-let s;
-let re3 = prompt("donnez a: ");
-let rep = prompt("donnez b : ");
-let rep1 = prompt("givev op");
+function user(nom,prenom) {
+	this.nom = nom;
+	this.prenom = prenom;
+	this.direHi = function(){
+		console.log("HI");
+	};
+};
 
-switch(rep1){
-	case '+' : 	s = parseInt(rep)+parseInt(re3);alert(s);;break;
-	case '*' : 	s = parseInt(rep)*parseInt(re3);alert(s);break;
-	case '-': 	s = parseInt(rep)-parseInt(re3);alert(s);break;
-	case '/':   s = parseInt(rep)/parseInt(re3);alert(s);break;
-	default: alert("cant");break;
-}
+let u1 = new user("ghoudan","ayoub");
+let u2 = new user("bari","ayoub");
