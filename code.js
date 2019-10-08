@@ -1,7 +1,7 @@
-let x=3;
-let y=2;
-let s=x+y;
-if (x<y){
-	alert("inferieur");
-}else alert("supperieur");
-
+let rep = prompt("une note : ");
+let x = 10 ;
+if ( rep == x){
+	alert("passable");
+}else if(rep < x){
+	alert("redouble");
+}else alert("bien");
