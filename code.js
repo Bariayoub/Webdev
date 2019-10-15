@@ -43,18 +43,20 @@
 // 	console.log(valeur);
 // }
 
-var query = document.querySelector('#menu .item span'), 
-queryAll = document.querySelectorAll('#menu .item span');
-alert("text : "+query.innerHTML);
-alert("length : "+queryAll.length);
-alert(queryAll[0].innerHTML + ' - ' + queryAll[1].innerHTML);
+// var query = document.querySelector('#menu .item span'), 
+// queryAll = document.querySelectorAll('#menu .item span');
+// alert("text : "+query.innerHTML);
+// alert("length : "+queryAll.length);
+// alert(queryAll[0].innerHTML + ' - ' + queryAll[1].innerHTML);
 	
-for (let p of queryAll){
-	console.log(p.attributes);
-	console.log(p.innerHTML);
-	console.log(p.outerHTML);
-	console.log(p.clientHeight);
-	console.log(p.className);
-	console.log(p.classList);
-	console.log(p.id);
-}
+// for (let p of queryAll){
+// 	console.log(p.attributes);
+// 	console.log(p.innerHTML);
+// 	console.log(p.outerHTML);
+// 	console.log(p.clientHeight);
+// 	console.log(p.className);
+// 	console.log(p.classList);
+// 	console.log(p.id);
+// }
+
+document.getElementById('myColorDiv2').className='blue';
