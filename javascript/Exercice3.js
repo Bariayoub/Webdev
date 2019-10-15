@@ -7,4 +7,4 @@ function validateForm(){
     }else alert('Vous avez réussi votre exercice');   
 }
 
-document.write('<form name="myForm" onsubmit="return validateForm()" method="post">Name: <input type="text" name="fname"><br><br>Family name: <input type="text" name="faname"><br><br>Email: <input type="text" name="email"><input type="submit" value="Submit"></form>');
+document.write('<form name="myForm" onsubmit="return validateForm()" method="post">Name: <input type="text" name="fname"><br><br>Family name: <input type="text" name="faname"><br><br>Email: <input type="text" name="email"><br><br><input type="submit" value="Submit"></form>');
