@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html onclick="alert('Propagation dans l\'élément html')">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event bubbles</title>
+    <script type="text/javascript">
+    function init(){
+        document.body.onclick=docBodEvent;
+        
+    }
+    function docEvent(){
+        alert("Propagation dans l\'objet document");
+    }
+    function docBodEvent(event){
+        alert("Propagation se fait dans le BODY.");
+        event.cancelBubble=true;
+    }
+   
+    </script>
+</head>
+<body onload="init()">
+    <h1>Propagation des évènements</h1>
+    <hr/>
+    <form onclick="alert('Il se propage au formulaire');">
+    <input type="button" value="Button  `main1`" name="main1" onclick="alert('L evenement commence au boutton : '+this.name)">
+    </form>
+</body>
+</html>

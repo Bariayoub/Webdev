@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+    <title>Exercice 1</title>
+    <style>
+    .mycolor{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
     
+    </style>
+</head>
+<body  class="mycolor">
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex hic ipsam excepturi id consequatur nemo in tenetur beatae quod, voluptas repellat architecto temporibus obcaecati animi. Esse veritatis necessitatibus corrupti beatae!</div>
+    <script>
+    const col=document.querySelector(".mycolor");
+    
+
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
+
+
+    function changecolor(e){
+        col.classList.toggle("mycolor");
+        col.style.backgroundColor=getRandomColor();
+        col.style.color=getRandomColor();
+    }
+    document.onclick=changecolor;
+
+  
+    </script>
 </body>
-</html>
+</html> 

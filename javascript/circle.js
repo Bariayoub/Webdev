@@ -3,8 +3,8 @@ console.log(c);
 console.log(c.style.top);
 console.log(c.style.left);
 function getCord(e){
-    var x=(e.clientX+25)+"px";
-    var y=(e.clientY+25)+"px";
+    var x=(e.clientX-25)+"px";
+    var y=(e.clientY-25)+"px";
     c.style.top=y;
     c.style.left=x;
     console.log(x,y);
