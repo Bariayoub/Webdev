@@ -5,8 +5,8 @@ var windowWidth = window.innerWidth;
 var windowHeight = window.innerHeight;
 
 function mouseCoordinates(e) {
-    var horizontalPosition = windowWidth - e.clientX - 15;
-    var verticalPosition= windowHeight - e.clientY - 15;
+    var horizontalPosition = windowWidth - e.clientX - 25;
+    var verticalPosition= windowHeight - e.clientY - 25;
     console.log(horizontalPosition);
     console.log(verticalPosition);
     
